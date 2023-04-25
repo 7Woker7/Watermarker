@@ -26,6 +26,7 @@ namespace Watermarker.Controllers
                     file.CopyTo(stream);
                 }
             }
+
             return Ok("Upload Complete");
         }
     }

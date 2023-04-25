@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Watermarker.Controllers
 {
@@ -17,25 +18,20 @@ namespace Watermarker.Controllers
             return View();
         }
 
-        // GET: FFMPEGController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
         // POST: FFMPEGController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create()
         {
-            try
+            var process = new ProcessStartInfo
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                FileName = @"D:\Programs\ffmpeg\ffmpeg.exe",
+                Arguments = "-y -i input.mp4 scale=540x380 test2.mp4",
+                WorkingDirectory = @"D:\Programs\ffmpeg\",
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
+            Process.Start(process);
+            return Ok("Watermark added");
         }
 
         // GET: FFMPEGController/Edit/5
