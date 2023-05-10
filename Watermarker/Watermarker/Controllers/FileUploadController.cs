@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace Watermarker.Controllers
 {
@@ -26,7 +27,19 @@ namespace Watermarker.Controllers
                     file.CopyTo(stream);
                 }
             }
-
+            var startInfo = new ProcessStartInfo
+            {
+                FileName = @"D:\Programs\ffmpeg\ffmpeg.exe",
+                Arguments = "-y -i input.mp4 scale=540x380 test2.mp4",
+                WorkingDirectory = @"D:\Programs\ffmpeg\",
+                CreateNoWindow = true,
+                UseShellExecute = false
+            };
+            using (var process = new Process { StartInfo = startInfo })
+            {
+                process.Start();
+                process.WaitForExit();
+            }
             return Ok("Upload Complete");
         }
     }

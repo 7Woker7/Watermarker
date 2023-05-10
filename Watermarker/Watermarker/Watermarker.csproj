@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
+    <Folder Include="ffmpeg\" />
     <Folder Include="UploadedFiles\" />
   </ItemGroup>
 
