@@ -8,9 +8,25 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Watermarker
 build_property.RootNamespace = Watermarker
-build_property.ProjectDir = D:\GitHub projects\Watermarker\Watermarker\Watermarker\
+build_property.ProjectDir = D:\GitHubProj\Watermarker\Watermarker\Watermarker\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GitHub projects\Watermarker\Watermarker\Watermarker
+build_property.MSBuildProjectDirectory = D:\GitHubProj\Watermarker\Watermarker\Watermarker
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/GitHubProj/Watermarker/Watermarker/Watermarker/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubProj/Watermarker/Watermarker/Watermarker/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubProj/Watermarker/Watermarker/Watermarker/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GitHubProj/Watermarker/Watermarker/Watermarker/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

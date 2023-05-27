@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj": {}
+    "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj": {}
   },
   "projects": {
-    "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj": {
+    "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj",
+        "projectUniqueName": "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj",
         "projectName": "Watermarker",
-        "projectPath": "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj",
+        "projectPath": "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\Watermarker.csproj",
         "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\obj\\",
+        "outputPath": "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -51,9 +51,17 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.0, )"
+            },
+            "Xabe.FFmpeg": {
+              "target": "Package",
+              "version": "[5.2.6, )"
             }
           },
           "imports": [

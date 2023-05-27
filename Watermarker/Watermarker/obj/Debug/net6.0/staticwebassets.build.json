@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "3P8Mqn83oLVbkYdwIf6Rid0/swnvMio5Hgwq3pwjY1s=",
+  "Hash": "v2asf7D/L1Xl7sEczlSwP+/Z/7iRDQua71Iq6+Nh+bw=",
   "Source": "Watermarker",
   "BasePath": "_content/Watermarker",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Watermarker\\wwwroot",
+      "Source": "Watermarker",
+      "ContentRoot": "D:\\GitHubProj\\Watermarker\\Watermarker\\Watermarker\\wwwroot\\",
+      "BasePath": "_content/Watermarker",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

@@ -11,7 +11,7 @@ namespace Watermarker.Controllers
         {
             _webHostEnvironment = webHostEnvironment;
         }
-        // GET: FFMPEGController
+        [HttpGet("Index")]
         public ActionResult Index()
         {
             return View();
@@ -36,30 +36,33 @@ namespace Watermarker.Controllers
             {
                 await video.CopyToAsync(fileStream);
             }
-            var path = "D:\\GitHub projects\\Watermarker\\Watermarker\\Watermarker\\UploadedFiles\\aydh4iwl.so4.mp4";
+
             await Task.Run(() =>
             {
                 var startInfo = new ProcessStartInfo
-                
                 {
-                    FileName = Path.Combine(_webHostEnvironment.ContentRootPath, "ffmpeg"),
-                    Arguments = $"ffmpeg -i {path} -i watermark.png overlay=5:5 output.mp4",
+                    FileName = Path.Combine(_webHostEnvironment.ContentRootPath, "ffmpeg", "ffmpeg.exe"),
+                    Arguments = "-i input.mp4 -i watermark.png -filter_complex \"overlay = 5:5\"  D:\\output.mp4",
                     WorkingDirectory = directoryPath,
                     CreateNoWindow = true,
                     UseShellExecute = false
                 };
-                using (var process = new Process { StartInfo = startInfo })
-                {
-                    process.Start();
-                    process.WaitForExit();
-                }
+                ProcessStartInfo startInfo2 = new ProcessStartInfo(@"ffmpeg\\ffmpeg.exe");
+                Process.Start(startInfo2);
+                startInfo2.Arguments = $"-i input.mp4 -i watermark.png D:\\output.mp4";
+                Process.Start(startInfo2);
+                //using (var process = new Process { StartInfo = startInfo2 })
+                //{
+                //    process.Start();
+                //    process.WaitForExit();
+                //}
             });
-            return Ok(fileName);
+            return Ok();
 
         }
 
-            // GET: FFMPEGController/Edit/5
-            public ActionResult Edit(int id)
+        // GET: FFMPEGController/Edit/5
+        public ActionResult Edit(int id)
         {
             return View();
         }
