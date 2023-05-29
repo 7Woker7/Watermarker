@@ -31,7 +31,7 @@ namespace Watermarker.Controllers
             
             // Watermark upload
             string watermarkExt = watermark.FileName.Split('.').Last();
-            string fileName = string.Concat(Path.GetRandomFileName(), ".", watermarkExt);
+            string fileName = string.Concat("VideoWithWatermark", ".", watermarkExt);
             string filePath = Path.Combine(dir, fileName);
             await using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
             {
