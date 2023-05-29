@@ -11,7 +11,6 @@ namespace Watermarker.Controllers
         {
             _webHostEnvironment = webHostEnvironment;
         }
-        [HttpGet("Index")]
         public ActionResult Index()
         {
             return View();

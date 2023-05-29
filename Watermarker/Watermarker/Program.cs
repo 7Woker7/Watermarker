@@ -1,7 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddMvc();
+builder.Services.AddMvc(option => option.EnableEndpointRouting = false);
 //builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -17,18 +17,18 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-app.UseRouting();
-app.UseCors();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
-});
+app.UseMvcWithDefaultRoute();
+//app.UseRouting();
+//app.UseCors();
 
-app.UseHttpsRedirection();
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+//});
 
-app.UseAuthorization();
 
-app.MapControllers();
+
+//app.MapControllers();
 
 app.Run();

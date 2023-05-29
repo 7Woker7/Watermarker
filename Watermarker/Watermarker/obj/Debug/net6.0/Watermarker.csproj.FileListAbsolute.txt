@@ -320,3 +320,5 @@ D:\GitHubProj\Watermarker\Watermarker\Watermarker\bin\Debug\net6.0\runtimes\win\
 D:\GitHubProj\Watermarker\Watermarker\Watermarker\obj\Debug\net6.0\Watermarker.RazorAssemblyInfo.cache
 D:\GitHubProj\Watermarker\Watermarker\Watermarker\obj\Debug\net6.0\Watermarker.RazorAssemblyInfo.cs
 D:\GitHubProj\Watermarker\Watermarker\Watermarker\bin\Debug\net6.0\Watermarker.staticwebassets.runtime.json
+D:\GitHubProj\Watermarker\Watermarker\Watermarker\bin\Debug\net6.0\libman.json
+D:\GitHubProj\Watermarker\Watermarker\Watermarker\bin\Debug\net6.0\web.config

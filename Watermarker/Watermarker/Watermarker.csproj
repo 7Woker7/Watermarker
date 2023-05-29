@@ -18,7 +18,6 @@
     <Folder Include="Data\Migrations\" />
     <Folder Include="ffmpeg\" />
     <Folder Include="UploadedFiles\" />
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>

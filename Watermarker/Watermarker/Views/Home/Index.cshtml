@@ -2,18 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div>
     <h4>Download watermark</h4>
-    <div class="container">
-        <form asp-controller="Home" asp-action="WatermarkUpload" enctype="multipart/form-data" method="post">
-            <div class="mb-3">
-                <label class="form-label">Upload watermark file</label>
-                <input type="file" name="file" class="form-control" />
-            </div>
-            <div class="mb-3">
-                <button type="submit">Upload</button>
-            </div>
-        </form>
-    </div>
-    
+    <form enctype="multipart/form-data" asp-controller="home" asp-action="index" method="post">
+        <div class="mb-3">
+            <label class="form-label">Upload watermark file</label>
+            <input type="file" name="watermark" class="form-control" />
+
+            <label class="form-label">Upload video</label>
+            <input type="file" name="video" class="form-control" />
+
+            <label for="cars">Choose a watermark position</label>
+            <select name="position">
+                <option value=0>UpperLeft</option>
+                <option value=1>UpperRight</option>
+                <option value=2>Right</option>
+                <option value=3>Left</option>
+                <option value=4>Up</option>
+                <option value=5>BottomRight</option>
+                <option value=6>BottomLeft</option>
+                <option value=7>Center</option>
+                <option value=8>Bottom</option>
+            </select>
+
+            <button type="submit">Save video</button>
+        </div>
+    </form>
 </div>
